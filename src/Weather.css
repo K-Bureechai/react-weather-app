@@ -1,7 +1,41 @@
 .Weather {
     border: 1px solid #D9DCE0;
+    border-radius: 5px;
+    padding: 20px;
+    font-family:
+        Arial,
+        sans-serif
 }
+
+.Weather form {
+    margin-bottom: 20px;
+}
+
+.Weather li {
+    color: #5e5e5e;
+    font-size: 12px;
+    line-height: 16px;
+    list-style: none;
+}
+
+.Weather h3 {
+    color: #202124;
+    font-size: 22px;
+    line-height: 26px;
+    margin-bottom: 0;
+
+}
+
+.Weather .short-description li {
+    color: #5e5e5e;
+    font-size: 16px;
+    line-height: 20px;
+}
+
 .detail {
     display: inline-block;
-    
+}
+
+.Weather img {
+    vertical-align: top;
 }

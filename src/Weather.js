@@ -11,6 +11,7 @@ export default function Weather() {
               type="search"
               placeholder="Enter a city.."
               className="form-control"
+              autoFocus="on"
             />
           </div>
           <div className="col-3">
@@ -29,7 +30,7 @@ export default function Weather() {
             alt="mostly cloudy"
           />
           31 °C
-          <div className="detail">
+          <div className="detail mt-1">
             <ul>
               <li>Precipitation: 0%</li>
               <li>Humidity: 65%</li>
@@ -38,10 +39,12 @@ export default function Weather() {
           </div>
         </div>
         <div className="col-6">
-          <ul>
-            <li>Weather</li>
-            <li>Wednesday 21:00</li>
-            <li>Mostly cloudy</li>
+          <ul className="short-description">
+            <li>
+              <h3>Weather</h3>
+            </li>
+            <li >Wednesday 21:00</li>
+            <li >Mostly cloudy</li>
           </ul>
         </div>
       </div>
