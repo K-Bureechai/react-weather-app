@@ -29,9 +29,13 @@ export default function Weather() {
             src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
             alt="mostly cloudy"
           />
-          31 °C
+          <span className="temperature">31</span>
+          <div className="unit">
+            <span className="celsius"> °C </span>
+            <span className="fahrenheit">  °F</span>
+          </div>
           <div className="detail mt-1">
-            <ul>
+            <ul className="ps-4">
               <li>Precipitation: 0%</li>
               <li>Humidity: 65%</li>
               <li>Wind: 11 km/h</li>
@@ -43,8 +47,8 @@ export default function Weather() {
             <li>
               <h3>Weather</h3>
             </li>
-            <li >Wednesday 21:00</li>
-            <li >Mostly cloudy</li>
+            <li>Wednesday 21:00</li>
+            <li>Mostly cloudy</li>
           </ul>
         </div>
       </div>

@@ -11,6 +11,26 @@
     margin-bottom: 20px;
 }
 
+.temperature {
+    font-size: 48px;
+    font-weight: 400;
+    padding-left: 10px;
+}
+
+.temperature,.unit, .Weather img {
+    vertical-align: top ;
+}
+.unit {
+    display: inline-block;
+    font-size: 16px;
+    line-height: 24px;
+    margin: 5px 5px;
+}
+.fahrenheit {
+    color: #5e5e5e;
+    border-left: 1px solid #5e5e5e;
+    padding-left: 10px;
+}
 .Weather li {
     color: #5e5e5e;
     font-size: 12px;
@@ -36,6 +56,3 @@
     display: inline-block;
 }
 
-.Weather img {
-    vertical-align: top;
-}
