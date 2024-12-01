@@ -7,6 +7,9 @@
         sans-serif
 }
 
+.Weather h1 {
+    margin-bottom: 20px;
+}
 .Weather form {
     margin-bottom: 20px;
 }
