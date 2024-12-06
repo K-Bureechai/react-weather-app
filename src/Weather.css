@@ -30,6 +30,7 @@
     display: flex;
     align-items: top;
     justify-content: flex-start;
+    gap: 10px;
     
 }
 
