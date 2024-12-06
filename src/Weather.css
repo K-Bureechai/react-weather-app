@@ -21,27 +21,20 @@
     padding-left: 10px;
 }
 
-.temperature,
-.unit,
-.Weather canvas {
-    vertical-align: top;
+.left .unit {
+    position: relative;
+    top: -20px;
 }
 
-.Weather canvas {
-    padding-top: 5px;
+.left {
+    display: flex;
+    align-items: top;
+    justify-content: flex-start;
+    
 }
 
-.unit {
-    display: inline-block;
-    font-size: 16px;
-    line-height: 24px;
-    margin: 5px 5px;
-}
-
-.fahrenheit {
-    color: #5e5e5e;
-    border-left: 1px solid #5e5e5e;
-    padding-left: 10px;
+canvas { 
+height: 50px;  
 }
 
 .Weather li {
@@ -64,9 +57,4 @@
     font-size: 16px;
     line-height: 20px;
     text-align: right;
-}
-
-.detail {
-    display: inline-block;
-    vertical-align: top;
 }
