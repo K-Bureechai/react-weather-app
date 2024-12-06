@@ -10,6 +10,7 @@
 .Weather h1 {
     margin-bottom: 20px;
 }
+
 .Weather form {
     margin-bottom: 20px;
 }
@@ -20,20 +21,29 @@
     padding-left: 10px;
 }
 
-.temperature,.unit, .Weather img {
-    vertical-align: top ;
+.temperature,
+.unit,
+.Weather canvas {
+    vertical-align: top;
 }
+
+.Weather canvas {
+    padding-top: 5px;
+}
+
 .unit {
     display: inline-block;
     font-size: 16px;
     line-height: 24px;
     margin: 5px 5px;
 }
+
 .fahrenheit {
     color: #5e5e5e;
     border-left: 1px solid #5e5e5e;
     padding-left: 10px;
 }
+
 .Weather li {
     color: #5e5e5e;
     font-size: 12px;
@@ -53,9 +63,10 @@
     color: #5e5e5e;
     font-size: 16px;
     line-height: 20px;
+    text-align: right;
 }
 
 .detail {
     display: inline-block;
+    vertical-align: top;
 }
-
