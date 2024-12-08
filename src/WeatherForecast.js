@@ -17,14 +17,14 @@ if (loaded) {
       <div className="WeatherForecast">
         <div className="row">
           <div className="col">
-            <div className="WeatherForecast-day">{forecast[0].time}</div>
-            <WeatherIcon code={forecast[0].icon} size={36} />
+            <div className="WeatherForecast-day">{forecast.time}</div>
+            <WeatherIcon code={forecast.icon} size={36} />
             <div className="WeatherForecast-temperatures">
               <span className="WeatherForecast-temperature-max">
-                {forecast[0].temperature.maximum}°
+                {forecast.temperature.maximum}°
               </span>
               <span className="WeatherForecast-temperature-min">
-                {forecast[0].temperature.minimum}°
+                {forecast.temperature.minimum}°
               </span>
             </div>
           </div>
@@ -34,8 +34,8 @@ if (loaded) {
 
 } else {
 let apiKey = "a1b23b3d4098a0a16ftb2b02cf94o4d8";
-let longitude = props.coordinates.lon;
-let latitude = props.coordinates.lat;
+let longitude = props.coordinates.longitude;
+let latitude = props.coordinates.latitude;
 let apiUrl = `https://api.shecodes.io/weather/v1/forecast?lon=${longitude}&lat=${latitude}&key=${apiKey}&units=metric`;
 
 axios.get(apiUrl).then(handleResponse);
